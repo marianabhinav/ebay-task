@@ -13,19 +13,19 @@ services:
     volumes:
       - dbdata:/var/lib/postgresql/data
 
-#  listings-app:
-#   image: listings-app
-#   build:
-#       context: .
-#       dockerfile: Dockerfile
-#   depends_on:
-#     - db
-#   ports:
-#     - "8081:8081"
-#   environment:
-#     SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/listings_db
-#     SPRING_DATASOURCE_USERNAME: postgres
-#     SPRING_DATASOURCE_PASSWORD: postgres
+  listings-app:
+   image: listings-app
+   build:
+       context: .
+       dockerfile: Dockerfile
+   depends_on:
+     - db
+   ports:
+     - "8081:8081"
+   environment:
+     SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/listings_db
+     SPRING_DATASOURCE_USERNAME: postgres
+     SPRING_DATASOURCE_PASSWORD: postgres
 
 volumes:
   dbdata:
