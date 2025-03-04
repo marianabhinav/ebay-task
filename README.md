@@ -21,3 +21,4 @@ The application will be available at `http://localhost:8081`.
 ## API Documentation
 
 The API documentation is available at `http://localhost:8081/v3/api-docs`.
+The Swagger page is available at `http://localhost:8081/swagger-ui/index.html`.
